@@ -1,6 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "JuliodelJunco_CS_grupo2"
+    property "sonar.organization", "juliodeljunco"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 android {
